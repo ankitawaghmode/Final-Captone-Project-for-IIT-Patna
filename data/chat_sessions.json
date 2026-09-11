@@ -1,0 +1,207 @@
+[
+  {
+    "id": "365ae3a8",
+    "started": "2026-09-11 19:43",
+    "title": "👋 Hello! I am an IT Help Desk Assistant. How can I help yo…",
+    "global_id": "GID002",
+    "msg_count": 15,
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "👋 Hello! I am an IT Help Desk Assistant. How can I help you today?",
+        "time": "19:43"
+      },
+      {
+        "role": "user",
+        "content": "how to reset the password",
+        "time": "19:49"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! To assist you, please provide your Company Global ID (format GIDxxx).",
+        "time": "19:49"
+      },
+      {
+        "role": "user",
+        "content": "GID002",
+        "time": "19:49"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello Bob! Here are the steps to reset your password:\n\n1.  Navigate to the SSPR portal at https://sspr.company.com\n2.  Click 'I forgot my password'\n3.  Enter your company email address (firstname.lastname@company.com)\n4.  Choose your verification method: SMS to registered mobile, backup email, or Authenticator App\n5.  Complete the identity verification challenge\n6.  Enter a new password (minimum 12 characters, at least one uppercase, one lowercase, one number, and one special character)\n7.  Confirm the new password and click 'Finish'\n8.  You will receive a confirmation email within 2 minutes\n\nDid this resolve your issue?",
+        "time": "19:50"
+      },
+      {
+        "role": "user",
+        "content": "what the ticket status of TKT-001",
+        "time": "20:00"
+      },
+      {
+        "role": "assistant",
+        "content": "Ticket TKT-001, \"Cannot access VPN,\" is currently In Progress with High priority. The description states the VPN connection fails after a recent system update, showing an 'Authentication failed' error. Would you like me to check for any recent updates or add a comment to the ticket?",
+        "time": "20:00"
+      },
+      {
+        "role": "user",
+        "content": "I am having the issue with laptop battery issue",
+        "time": "20:22"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! To assist you, please provide your Company Global ID (format GIDxxx).",
+        "time": "20:22"
+      },
+      {
+        "role": "user",
+        "content": "GID001",
+        "time": "20:22"
+      },
+      {
+        "role": "assistant",
+        "content": "I don't see any similar open tickets for you. Would you like me to create a new ticket for your laptop battery issue?",
+        "time": "20:22"
+      },
+      {
+        "role": "user",
+        "content": "yes create the new ticket",
+        "time": "20:37"
+      },
+      {
+        "role": "assistant",
+        "content": "Please provide your Company Global ID (format GIDxxx) so I can proceed with creating a new ticket for you.",
+        "time": "20:38"
+      }
+    ]
+  },
+  {
+    "id": "defab192",
+    "started": "2026-09-09 00:15",
+    "title": "👋 Hello! I am an IT Help Desk Assistant. How can I help yo…",
+    "global_id": "",
+    "msg_count": 1,
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "👋 Hello! I am an IT Help Desk Assistant. How can I help you today?",
+        "time": "00:15"
+      }
+    ]
+  },
+  {
+    "id": "49e84fc9",
+    "started": "2026-09-08 23:53",
+    "title": "👋 Hello! I am an IT Help Desk Assistant. How can I help yo…",
+    "global_id": "GID002",
+    "msg_count": 8,
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "👋 Hello! I am an IT Help Desk Assistant. How can I help you today?",
+        "time": "23:53"
+      },
+      {
+        "role": "user",
+        "content": "How to reset password ",
+        "time": "23:54"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! To help you with your password reset, please provide your Company Global ID (format GIDxxx).",
+        "time": "23:54"
+      },
+      {
+        "role": "user",
+        "content": "GID002",
+        "time": "23:55"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello Bob! Here are the steps to reset your password:\n\n1.  Navigate to the SSPR portal at https://sspr.company.com\n2.  Click 'I forgot my password'\n3.  Enter your company email address (firstname.lastname@company.com)\n4.  Choose your verification method: SMS to registered mobile, backup email, or Authenticator App\n5.  Complete the identity verification challenge\n6.  Enter a new password (minimum 12 characters, at least one uppercase, one lowercase, one number, one special character)\n7.  Confirm the new password and click 'Finish'\n\nDid this resolve your issue?",
+        "time": "23:55"
+      },
+      {
+        "role": "user",
+        "content": "What is my ticket status with ticket number TKT-001",
+        "time": "00:04"
+      },
+      {
+        "role": "assistant",
+        "content": "Ticket TKT-001, \"Cannot access VPN,\" is currently In Progress. The description states your VPN connection fails after a recent system update with an 'Authentication failed' error. We will notify you once there's an update or resolution.",
+        "time": "00:04"
+      },
+      {
+        "role": "user",
+        "content": "How to resolve laptop battery issue",
+        "time": "00:13"
+      }
+    ]
+  },
+  {
+    "id": "fda43f34",
+    "started": "2026-09-08 23:50",
+    "title": "👋 Hello! I am an IT Help Desk Assistant. How can I help yo…",
+    "global_id": "GID001",
+    "msg_count": 5,
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "👋 Hello! I am an IT Help Desk Assistant. How can I help you today?",
+        "time": "23:50"
+      },
+      {
+        "role": "user",
+        "content": "How to reset password",
+        "time": "23:53"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! To assist you with a password reset, please provide your Company Global ID (format GIDxxx).",
+        "time": "23:53"
+      },
+      {
+        "role": "user",
+        "content": "GID001",
+        "time": "23:53"
+      },
+      {
+        "role": "assistant",
+        "content": "I don't see any similar open tickets for you, Alice. Would you like me to create a new ticket for a password reset?",
+        "time": "23:53"
+      }
+    ]
+  },
+  {
+    "id": "744edcd7",
+    "started": "2026-09-08 23:34",
+    "title": "👋 Hello! I am an IT Help Desk Assistant. How can I help yo…",
+    "global_id": "GID001",
+    "msg_count": 5,
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "👋 Hello! I am an IT Help Desk Assistant. How can I help you today?",
+        "time": "23:34"
+      },
+      {
+        "role": "user",
+        "content": "how to reset the password",
+        "time": "23:48"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! To assist you, please provide your Company Global ID (format GIDxxx).",
+        "time": "23:48"
+      },
+      {
+        "role": "user",
+        "content": "GID001",
+        "time": "23:49"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello Alice! Here are the steps to reset your password:\n\n1.  Navigate to the SSPR portal at https://sspr.company.com\n2.  Click 'I forgot my password'\n3.  Enter your company email address (firstname.lastname@company.com)\n4.  Choose your verification method: SMS to registered mobile, backup email, or Authenticator App\n5.  Complete the identity verification challenge\n6.  Enter a new password (minimum 12 characters, at least one uppercase, one lowercase, one number, one special character)\n7.  Confirm the new password and click 'Finish'\n\nDid this resolve your issue?",
+        "time": "23:49"
+      }
+    ]
+  }
+]

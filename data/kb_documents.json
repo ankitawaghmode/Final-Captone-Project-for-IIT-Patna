@@ -1,0 +1,248 @@
+[
+  {
+    "id": "kb001",
+    "title": "How to Reset Your Password",
+    "category": "Access Management",
+    "content": "If you have forgotten your password or it has expired, follow these steps:\n\n**Self-Service Password Reset (SSPR):**\n1. Navigate to the SSPR portal at https://sspr.company.com\n2. Click 'I forgot my password'\n3. Enter your company email address (firstname.lastname@company.com)\n4. Choose your verification method: SMS to registered mobile, backup email, or Authenticator App\n5. Complete the identity verification challenge\n6. Enter a new password — requirements: minimum 12 characters, at least one uppercase letter, one lowercase letter, one number, and one special character (!@#$%)\n7. Confirm the new password and click 'Finish'\n8. You will receive a confirmation email within 2 minutes\n\n**After Reset — If SSO still fails:**\n- Clear your browser cache and cookies (Ctrl+Shift+Delete)\n- Try a different browser (Edge, Chrome, Firefox)\n- Wait up to 15 minutes for the password change to propagate across all systems\n- Sign out of all Microsoft sessions at https://mysignins.microsoft.com\n\n**Account Locked Out (too many failed attempts):**\n- Accounts auto-unlock after 30 minutes\n- For immediate unlock, contact IT helpdesk with your Employee ID and manager's name\n\n**Password Expiry Warning:**\n- Company policy: passwords expire every 90 days\n- You will receive email reminders at 14 days, 7 days, and 1 day before expiry",
+    "keywords": [
+      "password",
+      "reset",
+      "forgot",
+      "locked",
+      "expired",
+      "login",
+      "credentials",
+      "sso",
+      "unlock",
+      "account"
+    ]
+  },
+  {
+    "id": "kb002",
+    "title": "VPN Connection Issues and Setup",
+    "category": "Network",
+    "content": "The company uses GlobalProtect VPN for secure remote access. Follow these steps to troubleshoot VPN issues:\n\n**Initial VPN Setup:**\n1. Download GlobalProtect from the IT portal: https://itportal.company.com/vpn\n2. Install the application with administrator rights\n3. Open GlobalProtect and enter portal address: vpn.company.com\n4. Enter your company credentials (Global ID + password)\n5. Complete MFA if prompted\n\n**VPN Connection Fails — Authentication Error:**\n1. Verify your password is correct (try logging in to the company portal first)\n2. Ensure your MFA device is registered and working\n3. Check if your account is locked (see password reset guide)\n4. Try disconnecting and reconnecting\n5. Restart the GlobalProtect service: Task Manager > Services > PanGPS > Restart\n\n**VPN Connects but Cannot Access Resources:**\n1. Check if you are connected to the correct VPN gateway (should show your region)\n2. Disconnect VPN, flush DNS: open Command Prompt as admin, run 'ipconfig /flushdns'\n3. Reconnect to VPN\n4. If accessing internal shares, use UNC paths: \\\\server.company.com\\share\n\n**VPN Slow Performance:**\n1. Try changing the VPN gateway in GlobalProtect settings (select a different regional gateway)\n2. Close bandwidth-heavy applications (streaming, large downloads)\n3. Switch from WiFi to wired ethernet connection if possible\n4. Check company status page: https://status.company.com\n\n**VPN Not Starting After Windows Update:**\n1. Uninstall GlobalProtect (Settings > Apps)\n2. Restart your computer\n3. Download the latest version from IT portal and reinstall",
+    "keywords": [
+      "vpn",
+      "globalprotect",
+      "remote",
+      "connect",
+      "network",
+      "tunnel",
+      "authentication",
+      "gateway",
+      "disconnect"
+    ]
+  },
+  {
+    "id": "kb003",
+    "title": "Network and Internet Connectivity Issues",
+    "category": "Network",
+    "content": "Troubleshoot network and internet connectivity problems with these steps:\n\n**No Internet Access:**\n1. Check if other devices on the same network can access the internet\n2. Restart your network adapter: Settings > Network & Internet > Change adapter options > Right-click > Disable, then Enable\n3. Run Windows Network Diagnostics: Settings > Network & Internet > Status > Network troubleshooter\n4. Flush DNS and reset TCP/IP stack (run as Administrator):\n   - ipconfig /flushdns\n   - netsh winsock reset\n   - netsh int ip reset\n   - Restart your computer after these commands\n\n**Connected to WiFi but No Internet:**\n1. Forget the network and reconnect: Settings > Network & Internet > WiFi > Manage known networks\n2. Check if you are connected to the correct corporate SSID (CorpNet or CorpNet-5G)\n3. Guest WiFi (CorpGuest) does not have access to internal resources\n4. Try connecting with an ethernet cable to rule out WiFi issues\n\n**Cannot Access Internal Resources / Shares:**\n1. Ensure you are connected to the corporate network (on-premises or via VPN)\n2. Verify the server name is correct\n3. Check if you have the required access permissions with your manager\n4. Try accessing via IP address to rule out DNS issues\n\n**Slow Network Performance:**\n1. Run a speed test: https://speedtest.company.com\n2. Check if a Windows Update or backup is running in the background\n3. Disconnect any non-essential network drives\n4. Contact facilities if the issue affects the entire floor/building",
+    "keywords": [
+      "network",
+      "internet",
+      "wifi",
+      "connection",
+      "slow",
+      "no internet",
+      "ethernet",
+      "connectivity",
+      "dns"
+    ]
+  },
+  {
+    "id": "kb004",
+    "title": "Microsoft Outlook Email Issues",
+    "category": "Email",
+    "content": "Resolve common Outlook and email problems with these steps:\n\n**Outlook Not Loading / Stuck on Loading Screen:**\n1. Start Outlook in Safe Mode: Hold Ctrl while clicking the Outlook icon, or run 'outlook.exe /safe'\n2. If Safe Mode works, disable add-ins: File > Options > Add-ins > Manage COM Add-ins > Disable all > Restart\n3. Repair your Outlook profile: Control Panel > Mail > Show Profiles > Your profile > Repair\n4. Create a new profile if repair fails: Control Panel > Mail > Add > Follow the wizard\n\n**Emails Not Syncing / Not Receiving New Emails:**\n1. Check your Send/Receive status in the bottom status bar — should say 'All folders are up to date'\n2. Manually send/receive: Press F9 or Send/Receive tab > Send/Receive All Folders\n3. Check your internet/network connection\n4. Verify your mailbox is not full: File > Account Information > Mailbox Settings\n5. Clear the Outlook cache: Close Outlook, navigate to %LOCALAPPDATA%\\Microsoft\\Outlook, delete .ost files\n\n**Cannot Send Emails:**\n1. Check your Outbox for stuck messages — delete any unsent messages\n2. Verify recipient email addresses are correct\n3. Check if attachment size exceeds 25MB limit (use OneDrive links for large files)\n4. Verify your email account settings are correct: File > Account Settings\n\n**Outlook Calendar Issues:**\n1. Accept/Decline meeting invites may be delayed — wait 5 minutes and refresh\n2. For shared calendar access issues, ask the calendar owner to re-share\n3. Repair calendar: Open Calendar, File > Account Settings > Data Files > Repair",
+    "keywords": [
+      "outlook",
+      "email",
+      "mail",
+      "sync",
+      "calendar",
+      "inbox",
+      "sending",
+      "receiving",
+      "stuck",
+      "loading",
+      "ost"
+    ]
+  },
+  {
+    "id": "kb005",
+    "title": "Microsoft Teams Issues",
+    "category": "Collaboration",
+    "content": "Troubleshoot Microsoft Teams connectivity and feature issues:\n\n**Teams Not Loading or Crashing:**\n1. Clear Teams cache:\n   - Fully quit Teams (right-click system tray icon > Quit)\n   - Navigate to %APPDATA%\\Microsoft\\Teams\n   - Delete everything in: Cache, blob_storage, databases, GPUcache, IndexedDB, Local Storage, tmp folders\n   - Relaunch Teams\n2. If that doesn't work, uninstall and reinstall Teams from the IT portal\n\n**Cannot Join Meetings:**\n1. Check your internet connection speed (minimum 2Mbps for video calls)\n2. Verify you are signed in with your company account\n3. Try joining via browser: teams.microsoft.com > Join meeting\n4. Check if your firewall/VPN is blocking Teams (whitelist *.teams.microsoft.com)\n\n**Audio/Video Not Working in Meetings:**\n1. Check device permissions: Teams Settings > Permissions > Camera and Microphone\n2. Verify the correct audio/video devices are selected: Teams > Settings > Devices\n3. Test your devices: Settings > Devices > Make a test call\n4. Restart the Teams app and rejoin the meeting\n5. Update your audio/video drivers via Device Manager\n\n**Teams Status Stuck (showing wrong availability):**\n1. Click on your profile picture > Set status message > clear current status\n2. Set your status manually\n3. Sign out and sign back in\n\n**Cannot Find Channels or Teams:**\n- Teams in 'Hidden' section: Click the three dots > Show\n- Ask your team owner to re-add you if you cannot see a team you should have access to",
+    "keywords": [
+      "teams",
+      "microsoft teams",
+      "meeting",
+      "video",
+      "audio",
+      "camera",
+      "microphone",
+      "chat",
+      "channel",
+      "collaboration",
+      "crashing"
+    ]
+  },
+  {
+    "id": "kb006",
+    "title": "Software Installation Request",
+    "category": "Software",
+    "content": "How to request software installation on your company device:\n\n**Self-Service Software (Available in Company Portal):**\n1. Open the Company Portal app (or visit https://portal.company.com/software)\n2. Browse or search for the software you need\n3. Click 'Install' — installation runs automatically (may take 10-30 minutes)\n4. Reboot your computer if prompted\n5. Available software includes: VS Code, Git, Python, Node.js, 7-Zip, Notepad++, FileZilla, Postman, and more\n\n**Requesting New Software (Not in Portal):**\n1. Submit a software request ticket with:\n   - Software name and version required\n   - Business justification\n   - Your manager's approval (email confirmation)\n   - License information if you have one\n2. IT Security will review the software (typically 2-5 business days)\n3. Once approved, it will be added to the Company Portal or pushed to your device\n\n**Adobe / Microsoft Office Products:**\n- Microsoft 365 apps: Available in Company Portal\n- Adobe Creative Cloud: Requires department manager + IT approval\n- Submit a specific Adobe license request ticket\n\n**Running an Installer Yourself:**\n- By default, standard users cannot install software without admin rights\n- Request a temporary admin access ticket if needed for specific approved software\n- Never install unlicensed or pirated software — this violates company policy",
+    "keywords": [
+      "software",
+      "install",
+      "application",
+      "app",
+      "license",
+      "company portal",
+      "request",
+      "adobe",
+      "office"
+    ]
+  },
+  {
+    "id": "kb007",
+    "title": "Slow Computer Performance",
+    "category": "Hardware",
+    "content": "Improve your computer's performance with these troubleshooting steps:\n\n**Immediate Quick Fixes:**\n1. Restart your computer (many people leave it in sleep/hibernate for weeks)\n2. Check if Windows Update is running in the background: Settings > Windows Update\n3. Check Disk Usage in Task Manager (Ctrl+Shift+Esc) — if disk is at 100%, see below\n4. Close unnecessary browser tabs and applications\n\n**High CPU or Memory Usage:**\n1. Open Task Manager (Ctrl+Shift+Esc) > Processes tab\n2. Sort by CPU or Memory to find the top consumer\n3. If an unknown process is using high resources, run a malware scan: Windows Security > Quick Scan\n4. Disable startup programs: Task Manager > Startup tab > Disable unnecessary items\n\n**High Disk Usage (100% Disk in Task Manager):**\n1. Disable Windows Search indexing temporarily: Services > Windows Search > Stop\n2. Disable Superfetch/SysMain: Services > SysMain > Stop and set to Disabled\n3. Check for hard drive health: Run 'chkdsk /f' in Command Prompt as admin (schedule for next restart)\n4. If the laptop is over 3 years old with an HDD, request an SSD upgrade ticket\n\n**Low Disk Space:**\n1. Run Disk Cleanup: Search > Disk Cleanup > Clean up system files\n2. Move large files to OneDrive (you have 1TB of OneDrive storage)\n3. Uninstall unused applications: Settings > Apps\n4. Clear browser cache: Browser settings > Clear browsing data\n\n**After Windows Update Slowness:**\n- This is often normal for 24-48 hours as Windows completes background tasks\n- If it persists beyond 48 hours, raise a ticket",
+    "keywords": [
+      "slow",
+      "performance",
+      "cpu",
+      "memory",
+      "ram",
+      "disk",
+      "laggy",
+      "freezing",
+      "hanging",
+      "speed",
+      "computer"
+    ]
+  },
+  {
+    "id": "kb008",
+    "title": "Printer Issues and Setup",
+    "category": "Printer",
+    "content": "Resolve printing problems and set up printers:\n\n**Add a Network Printer:**\n1. Open Settings > Devices > Printers & scanners\n2. Click 'Add a printer or scanner'\n3. If the printer is not detected, click 'The printer I want isn't listed'\n4. Select 'Add a printer using a TCP/IP address or hostname'\n5. Enter the printer hostname (e.g., HP-FLOOR3.company.com) from the IT printer list\n6. Follow the wizard to complete setup\n\n**Print Job Stuck in Queue:**\n1. Open Control Panel > Devices and Printers > Right-click printer > See what's printing\n2. Cancel all pending documents\n3. If jobs cannot be cancelled:\n   - Stop Print Spooler service: services.msc > Print Spooler > Stop\n   - Navigate to C:\\Windows\\System32\\spool\\PRINTERS and delete all files\n   - Start Print Spooler service again\n4. Try printing again\n\n**Printer Shows Offline:**\n1. Right-click the printer > See what's printing > Printer menu > Uncheck 'Use Printer Offline'\n2. Check physical connection — printer should be powered on and showing a green indicator\n3. Remove and re-add the printer\n4. Verify the printer is on the corporate network (not in a different VLAN)\n\n**Poor Print Quality:**\n1. Check ink/toner levels from the printer control panel\n2. Run the printer's built-in cleaning cycle (Maintenance menu on the printer)\n3. Print a test page: Right-click printer > Printer properties > Print Test Page\n4. Contact facilities management for toner replacement",
+    "keywords": [
+      "printer",
+      "print",
+      "printing",
+      "spooler",
+      "queue",
+      "stuck",
+      "offline",
+      "toner",
+      "ink",
+      "network printer"
+    ]
+  },
+  {
+    "id": "kb009",
+    "title": "Multi-Factor Authentication (MFA) Setup and Issues",
+    "category": "Security",
+    "content": "Set up and troubleshoot Multi-Factor Authentication (MFA) for your company account:\n\n**Setting Up MFA for the First Time:**\n1. Go to https://aka.ms/mfasetup (Microsoft MFA setup page)\n2. Sign in with your company account\n3. Click 'Add sign-in method'\n4. Recommended: Choose 'Authenticator app' (Microsoft Authenticator)\n5. Install Microsoft Authenticator on your phone\n6. Scan the QR code shown on screen\n7. Approve the test notification on your phone\n8. Also add a backup phone number (SMS) as a secondary method\n\n**MFA Prompt Not Received:**\n1. Ensure your phone has internet connectivity\n2. Check if the Microsoft Authenticator app has notification permissions\n3. Open the app manually and check for pending notifications\n4. Request a code from the app: Tap your account > Show one-time password code\n5. On the sign-in page, click 'I can't use my Microsoft Authenticator app right now'\n6. Use your backup SMS method\n\n**Lost Phone / Need to Reset MFA:**\n1. Contact IT helpdesk immediately\n2. You will need to verify your identity with employee ID and manager confirmation\n3. IT will temporarily bypass MFA to allow you to register a new device\n4. Re-register your new phone at https://aka.ms/mfasetup\n\n**MFA for New Applications:**\n- Some applications require separate MFA enrollment\n- Check the application's help page or contact IT for specific MFA requirements",
+    "keywords": [
+      "mfa",
+      "multi-factor",
+      "authenticator",
+      "2fa",
+      "two-factor",
+      "verification",
+      "otp",
+      "security",
+      "phone",
+      "app",
+      "microsoft authenticator"
+    ]
+  },
+  {
+    "id": "kb010",
+    "title": "Remote Desktop and Virtual Desktop (VDI) Issues",
+    "category": "Remote Access",
+    "content": "Troubleshoot Remote Desktop Protocol (RDP) and Virtual Desktop Infrastructure (VDI) issues:\n\n**Cannot Connect via Remote Desktop:**\n1. Ensure you are connected to the company VPN first\n2. Verify the hostname or IP of the target computer is correct\n3. Confirm Remote Desktop is enabled on the target PC: Settings > System > Remote Desktop > Enable\n4. Check that you have permission to connect (you must be in the Remote Desktop Users group)\n5. Verify the target computer is powered on and not in sleep mode (call your colleague or facilities)\n6. Check Windows Firewall on target PC: Allow Remote Desktop through firewall\n\n**Remote Desktop Disconnects Frequently:**\n1. Check your network stability — a stable VPN connection is required\n2. Adjust RDP settings: Reduce display quality in the Remote Desktop connection options\n3. Set 'Experience' to 'LAN (10 Mbps or higher)' in RDP connection settings\n4. Disable 'Reconnect if connection is dropped' and reconnect manually\n\n**Citrix / VDI Desktop Issues:**\n1. Clear Citrix cache: Citrix Workspace > Preferences > Reset\n2. Uninstall and reinstall Citrix Workspace from the IT portal\n3. Try accessing via browser: https://citrix.company.com\n4. If black screen appears on VDI logon, press Ctrl+Alt+Break to refresh\n\n**Slow Remote Desktop Performance:**\n1. Reduce color depth: RDP options > Display > Highest quality (32 bit) → change to True Color (16 bit)\n2. Disable wallpaper and animations in RDP Experience settings\n3. Close unnecessary applications on the remote session",
+    "keywords": [
+      "remote desktop",
+      "rdp",
+      "vdi",
+      "citrix",
+      "virtual desktop",
+      "remote access",
+      "disconnect",
+      "connection",
+      "black screen"
+    ]
+  },
+  {
+    "id": "kb011",
+    "title": "OneDrive and SharePoint Issues",
+    "category": "Cloud Storage",
+    "content": "Resolve OneDrive and SharePoint file storage and sync issues:\n\n**OneDrive Not Syncing:**\n1. Check the OneDrive status icon in the system tray:\n   - Blue cloud = syncing\n   - Green check = synced\n   - Red X = error\n2. Click the cloud icon > View sync activity to see errors\n3. Pause and resume sync: Right-click OneDrive icon > Pause syncing > Resume syncing\n4. If a specific file is not syncing:\n   - File name may contain invalid characters (: * ? \" < > | /)\n   - File path may exceed 400 characters\n   - File may be open/locked by another application\n5. Reset OneDrive: Win+R > Type: %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset\n\n**Cannot Access SharePoint Site:**\n1. Verify you have been granted access by the site owner\n2. Try accessing via browser: https://company.sharepoint.com\n3. Clear browser cache and cookies\n4. Check if you are signed into the correct Microsoft account in your browser\n\n**SharePoint Files Not Loading / Slow:**\n1. Clear browser cache (Ctrl+Shift+Delete)\n2. Try a different browser\n3. Check company status page: https://status.company.com for Microsoft 365 outages\n4. Try the SharePoint mobile app as an alternative\n\n**Storage Full Warning:**\n- You have 1TB of OneDrive storage\n- Archive old files using OneDrive's 'Files On-Demand' feature\n- Right-click synced folders > OneDrive > Free up space (keeps a placeholder, removes local copy)",
+    "keywords": [
+      "onedrive",
+      "sharepoint",
+      "sync",
+      "cloud",
+      "storage",
+      "files",
+      "share",
+      "upload",
+      "download",
+      "document"
+    ]
+  },
+  {
+    "id": "kb012",
+    "title": "New Laptop Setup and Hardware Issues",
+    "category": "Hardware",
+    "content": "Getting started with a new laptop or resolving hardware issues:\n\n**New Laptop Initial Setup:**\n1. Connect to the internet (ethernet preferred for initial setup)\n2. Sign in with your company credentials — the laptop will join Azure AD automatically\n3. Wait for initial policies and software to be pushed (30-60 minutes, laptop may restart)\n4. After setup, connect to corporate WiFi: CorpNet or CorpNet-5G\n5. Install required software from Company Portal\n6. Set up OneDrive to sync your documents\n7. Transfer data from old laptop: Use the Migration Assistant tool in Company Portal\n\n**Laptop Not Charging:**\n1. Try a different power outlet\n2. Check if the charging cable is properly connected at both ends\n3. Inspect the charging port and cable for damage\n4. Remove the battery (if removable), hold power button 15 seconds, reinsert battery and try again\n5. If none of the above work, raise a hardware ticket for physical inspection\n\n**Screen Issues (flickering, black screen):**\n1. Update display drivers: Device Manager > Display Adapters > Update driver\n2. Adjust screen brightness: Settings > System > Display\n3. Test with an external monitor to determine if it is a screen or graphics issue\n4. For persistent issues, raise a hardware ticket\n\n**Requesting Hardware Replacement:**\n- Laptops are replaced on a 4-year refresh cycle\n- For out-of-warranty hardware failures, raise a ticket with:\n  - Device serial number (found on the sticker on the bottom of the laptop)\n  - Description of the hardware issue\n  - Your manager's approval for urgent replacements",
+    "keywords": [
+      "laptop",
+      "hardware",
+      "setup",
+      "new laptop",
+      "charging",
+      "screen",
+      "display",
+      "keyboard",
+      "battery",
+      "replacement",
+      "slow"
+    ]
+  },
+  {
+    "id": "kb013",
+    "title": "test",
+    "category": "Access Management",
+    "content": "1. test the by rebooting the system",
+    "keywords": [
+      "reboot",
+      "test"
+    ]
+  },
+  {
+    "id": "kb014",
+    "title": "Laptop Battry Issue",
+    "category": "Hardware",
+    "content": "Verified charger and charging port functionality.\n\nRan Windows battery health check to assess capacity.\n\nConducted physical inspection with IT technician.",
+    "keywords": [
+      "Battry"
+    ]
+  },
+  {
+    "id": "kb015",
+    "title": "laptop battery issue",
+    "category": "Hardware",
+    "content": "Verified charger and charging port functionality.\n\nRan Windows battery health check to assess capacity.\n\nConducted physical inspection with IT technician.",
+    "keywords": [
+      "battery",
+      "Charger"
+    ]
+  }
+]
